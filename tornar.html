@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	 <title>AFEGIR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+	<style>
+
+		.main-center{
+			margin: 0 auto;
+			max-width: 400px;
+			padding: 10px 40px;
+			background:#009edf;
+			color: #FFF;
+			text-shadow: none;
+			-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+			-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+			box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+		}
+		form {
+    width: 500px;
+    position: relative;
+    left: 624px;
+}
+		input{
+			color:black;
+			}
+	</style>
+	<body>
+		
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="#"> <span class="glyphicon glyphicon-home"></span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="home.php?logout"><span class="glyphicon glyphicon-user"></span>logout</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+		
+		<form action="afegir.php"	 method=post  class="mx-auto" style="width: 500px;"><br>
+		<div class="main-center">
+			<table cellspacing=3 cellpadding=3 >
+				<tr>
+					<td>Nom : </td>
+					<td><input type=text name=givenname size=16 maxlength=15 required></td>
+				</tr>
+				<tr>
+					<tr>
+						<td>Cognom : </td>
+						<td><input type=text name=sn size=16 maxlength=15 required></td>
+					</tr>
+					<tr>
+						<td>Unitat organitzativa: </td>
+						<td>
+							<div class="form-group">
+								<select class="form-control"name="ou" id="exampleFormControlSelect1">
+									<option value="usuaris">usuaris</option>
+									<option value="administradors">administradors</option>
+									<option value="desenvolupadors">desenvolupadors</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Titol: </td>
+						<td><input type=text name=title size=16 maxlength=15 required></td>                     
+					</tr>
+					<tr>
+						<td> uid: </td>
+						<td><input type=text name=uid size=16 maxlength=15 required></td>                     
+					</tr>
+				
+					<tr>
+						<td>Número mòbil: </td>
+						<td><input type=text name=mobile size=16 maxlength=15 required></td>
+						
+					</tr>
+						<tr><td>Fix número: </td>
+						<td><input type=text name=telephonenumber size=16 maxlength=15 required></td>
+					</tr>
+				</tr>
+				<tr>
+					<td>Adreça de l'usuari: </td>
+					<td><input type=text name=adres size=16 maxlength=15 required></td>
+				</tr>
+				<tr>
+					<td> gidNumber: </td>
+					<td><input type=text name=gidnumber size=16 maxlength=15 required></td>
+				</tr>
+				<tr>
+					<td> uidNumber: </td>
+					<td><input type=text name=uidnumber size=16 maxlength=15 required></td>
+				</tr>
+				<tr>
+					<td>Descripció de l'usuari: </td>
+					<td><input type=text name=description size=16 maxlength=15 required></td>
+				</tr>
+				<tr>
+				<tr>
+					<td>Contrasenya del nou usuari LDAP: </td>
+					<td><input type=password name=password size=16 maxlength=15 required ></td>
+				</tr>
+				<tr>
+					<td> <button type="submit" name="submit" class="btn btn-primary">Afegir Usuari</button></td>
+				</tr>
+			</table>
+		</div>
+		</form>
+	</body>
+</html>
+

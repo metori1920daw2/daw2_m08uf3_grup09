@@ -1,0 +1,95 @@
+
+
+
+<!DOCTYPE html>
+<html>
+	 <head>
+	 <title>BORRA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+	<style>
+
+	
+		
+		form {
+			
+			padding: 10px 40px;
+			background:#009edf;
+		    position: relative;
+				top: 125px;
+				left: 444PX;
+				
+			}
+		input{
+			color:black;
+			}
+	</style>
+	</head>
+	<body>
+		
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="home.php"> <span class="glyphicon glyphicon-home"></span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="home.php?logout"><span class="glyphicon glyphicon-user"></span>logout</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+		<div class="main-center">
+			<form action="modifica.php"	 method=post  class="mx-auto" style="width: 500px; "><br>
+				<table cellspacing=3 cellpadding=3 >
+					<tr>
+						<td>Uid: </td>
+						<td><input type=text name="uid" size=16 name=login ></td>
+					</tr>
+					<tr>
+						<td>Unitat organitzativa: </td>
+						<td>
+							<div class="form-group">
+								<select class="form-control"name="ou" id="exampleFormControlSelect1">
+									<option value="usuaris">usuaris</option>
+									<option value="administradors">administradors</option>
+									<option value="desenvolupadors">desenvolupadors</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td> gidNumber: </td>
+						<td><input type=text name=gidnumber size=16 maxlength=15 ></td>
+					</tr>
+					<tr>
+						<td> uidNumber: </td>
+						<td><input type=text name=uidnumber size=16 maxlength=15 ></td>
+					</tr>
+					<tr>
+						<td> <button type="submit" name="submit" class="btn btn-primary">Modificar Usuari</button></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
+
+
